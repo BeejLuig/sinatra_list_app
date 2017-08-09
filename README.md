@@ -4,11 +4,11 @@
 ---
 
 - Fork and clone this repo.
-- run the commands below:
+- In your terminal, run the commands below:
 
 ```bash
-  bundle install
-  rake db:migrate
-  ruby app.rb
+  $ bundle install
+  $ rake db:migrate
+  $ ruby app.rb
 ```
 In your browser, go to `localhost:4567` (or whatever port Sinatra gives you)
