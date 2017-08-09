@@ -6,7 +6,7 @@
 - Fork and clone this repo.
 - run the commands below:
 
-```ruby
+```bash
   bundle install
   rake db:migrate
   ruby app.rb
