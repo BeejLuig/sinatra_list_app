@@ -1,0 +1,25 @@
+<h1>My List</h1>
+<ul>
+  <% @list_items.each_with_index do |list_item, i| %>
+    <li>
+      <%= i + 1 %>. <%= list_item.name %> -
+      <a href="/done/<%= list_item.id %>"> done </a> -
+      <a href="/delete/<%= list_item.id %>"> X </a>
+    </li>
+  <% end %>
+</ul>
+
+<ul>
+  <% @done_items.each_with_index do |list_item, i| %>
+    <li>
+      <del><%= list_item.name %></del> - 
+      <a href="/delete/<%= list_item.id %>"> X </a>
+    </li>
+  <% end %>
+</ul>
+
+<form action="/" method="post">
+  <h2>Add an item</h2>
+  <label>Name</label>
+  <input type="text" name="name">
+</form>
